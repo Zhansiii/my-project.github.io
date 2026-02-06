@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#f6efe6, #f2e6d6);
+  font-family: 'Cormorant Garamond', serif;
+  color: #5a4633;
+}
+
+.invite {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.top-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  margin: 2.2rem 0 1.6rem;
+  color: #b58a57;
+  letter-spacing: 0.05em;
+}
+
+/* Фото */
+.photo-section {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.photo-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Градиенты */
+.photo-gradient {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 18%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.photo-gradient.top {
+  top: 0;
+  background: linear-gradient(
+    to bottom,
+    #f6efe6 0%,
+    rgba(246, 239, 230, 0.6) 40%,
+    rgba(246, 239, 230, 0) 100%
+  );
+}
+
+.photo-gradient.bottom {
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    #f2e6d6 0%,
+    rgba(242, 230, 214, 0.6) 40%,
+    rgba(242, 230, 214, 0) 100%
+  );
+}
+
+/* Плеер */
+.player-wrapper {
+  margin: 1.8rem 0 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.player-btn {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid #caa471;
+  background: transparent;
+  color: #b58a57;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.player-btn:hover {
+  background: #caa471;
+  color: #fff;
+}
+
+/* Имя */
+.name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: #b58a57;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 2.2rem;
+}
+
+/* Текст */
+.text-block {
+  background: #efe2cf;
+  padding: 2.2rem 1.4rem;
+  margin: 0 1rem;
+  border-radius: 18px;
+}
+
+.text-title {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.6rem;
+}
+
+.text-body {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.text-body span {
+  font-weight: 500;
+}
+
+.divider {
+  margin-top: 1.6rem;
+  color: #b58a57;
+  letter-spacing: 0.3em;
+}
